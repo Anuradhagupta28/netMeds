@@ -640,7 +640,7 @@ input {
   <hr class="und">
   <div id="link">
    <div> <a href=""><p class="p">Medicine</p> </a></div>
-   <div><a href="well.html"><p class="p">Wellness</p></a></div>
+   <div><a href="wellness.html"><p class="p">Wellness</p></a></div>
    <div><a href=""><p class="p">Lab Test</p></a></div>
    <div><a href="beauty.html"><p class="p">Beauty</p></a></div>
    <div><p class="p">Copyright© 2022. All Rights Reserved.</p></div>
@@ -674,7 +674,7 @@ input {
     ]
     
     
-    var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
+    var cart=JSON.parse(localStorage.getItem("cart-page")) || [];
     arr.map(function(ele){
         
         var div1=document.createElement("div")
@@ -729,7 +729,7 @@ var data1=[
         mrp:"MRP Rs 699.00",
     },
 ]
-var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart=JSON.parse(localStorage.getItem("cart-page")) || [];
 displayitems(data1)
 function displayitems(data1){
     document.querySelector("#box2").textContent=""
@@ -771,7 +771,7 @@ data1.map(function(elem){
       function addcart(elem){
       console.log(elem)
       cart.push(elem)
-      localStorage.setItem("cartdata",JSON.stringify(cart))
+      localStorage.setItem("cart-page",JSON.stringify(cart))
     }
 
 // --------------------------------------------------
@@ -820,7 +820,7 @@ var data2=[
     }
 ]
 
-var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart=JSON.parse(localStorage.getItem("cart-page")) || [];
 displayitems1(data2)
 function displayitems1(data2){
 document.querySelector("#box3").textContent=""
@@ -858,7 +858,7 @@ data2.map(function(element){
       function addcart(element){
       console.log(element)
       cart.push(element)
-      localStorage.setItem("cartdata",JSON.stringify(cart))
+      localStorage.setItem("cart-page",JSON.stringify(cart))
     }
 
     div1.append(img1,des1,smalltxt1,price1,mrp1,btn)
@@ -915,7 +915,7 @@ var data3=[
     },
 ]
 
-var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart=JSON.parse(localStorage.getItem("cart-page")) || [];
 displayitems12(data3)
 function displayitems12(data3){
 document.querySelector("#box4").textContent=""
@@ -954,7 +954,7 @@ data3.map(function(element){
       function addcart(element){
       console.log(element)
       cart.push(element)
-      localStorage.setItem("cartdata",JSON.stringify(cart))
+      localStorage.setItem("cart-page",JSON.stringify(cart))
     }
 
     div.append(img,des,smalltxt,price,mrp,btn)
@@ -1006,7 +1006,7 @@ var data4=[
     },
 ]
 
-var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
+var cart=JSON.parse(localStorage.getItem("cart-page")) || [];
 displayitems123(data3)
 function displayitems123(data3){
 document.querySelector("#box5").textContent=""
@@ -1045,7 +1045,7 @@ data4.map(function(element){
       function addcart(element){
       console.log(element)
       cart.push(element)
-      localStorage.setItem("cartdata",JSON.stringify(cart))
+      localStorage.setItem("cart-page",JSON.stringify(cart))
     }
 
     div.append(img,des,smalltxt,price,mrp,btn)
@@ -1079,7 +1079,7 @@ var data5=[
     ]
     
     // var products=JSON.parse(localStorage.getItem("shoppingitems"))
-    var cart=JSON.parse(localStorage.getItem("cartdata")) || [];
+    var cart=JSON.parse(localStorage.getItem("cart-page")) || [];
     data5.map(function(ele){
         
         var div1=document.createElement("div")
