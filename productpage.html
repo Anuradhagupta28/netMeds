@@ -489,9 +489,18 @@ padding-left: 20px;
   }
   #greybox{
     height: 80px;
-    padding-top: 20px;
+  
     background-color: rgb(195, 200, 202);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-bottom: 20px;
 
+  }
+  #greyboxmini{
+    display: flex;
+    /* flex-direction: row; */
+    gap: 10px;
   }
 
 
@@ -542,6 +551,14 @@ padding-left: 20px;
     </div>
 <div id="greybox">
     <h4>Showing 30 of 245 items</h4>
+    <div id="greyboxmini">
+      <h4>sort by:</h4>
+      <button>popularity</button>
+      <button>high to low</button>
+      <button>low to high</button>
+      <button>discount</button>
+
+    </div>
   
 </div>
 
